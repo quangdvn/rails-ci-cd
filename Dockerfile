@@ -25,5 +25,13 @@ ENV RAILS_LOG_TO_STDOUT true
 
 ENV SECRET_KEY_BASE secret_key
 
+ENV DB_NAME=postgres
+
+ENV DB_USERNAME=postgres
+
+ENV DB_PASSWORD=postgres
+
+ENV DB_URL=postgres.c3q1knxswi0u.ap-southeast-1.rds.amazonaws.com
+
 # Start the main process.
 CMD ["rails", "s", "-b", "0.0.0.0"]
