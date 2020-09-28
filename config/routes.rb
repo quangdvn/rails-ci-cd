@@ -4,5 +4,7 @@ Rails.application.routes.draw do
     get "/", to: "welcome#index"
 
     get "posts", to: "welcome#show"
+
+    get "posts/:id", to: "welcome#detail"
   end
 end

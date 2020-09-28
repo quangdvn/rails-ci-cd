@@ -5,6 +5,12 @@ class Api::WelcomeController < ApiController
 
   def show
     @post = Post.all
-    render json: {success: true, post: @post, message: "Here we go again"}
+    render json: {success: true, posts: @post, message: "Here we go again"}
+  end
+
+  def detail
+    @post = Post.find_by id: params[:id]
+
+    render json: {success: true, post: @post, message: "Here you are !!"}
   end
 end
