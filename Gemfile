@@ -22,6 +22,7 @@ group :development, :test do
   gem "hirb"
   gem "irb"
   gem "rails_best_practices"
+  gem "regexp_parser", "1.7.1"
   gem "rubocop", "0.89.1", require: false
   gem "rubocop-ast", "0.3.0"
   gem "rubocop-rails", "~> 2.3.2", require: false

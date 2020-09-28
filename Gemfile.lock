@@ -247,7 +247,7 @@ GEM
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    regexp_parser (1.8.0)
+    regexp_parser (1.7.1)
     reline (0.1.5)
       io-console (~> 0.5)
     require_all (3.0.0)
@@ -351,6 +351,7 @@ DEPENDENCIES
   rails-i18n (~> 6.0.0)
   rails_best_practices
   ransack
+  regexp_parser (= 1.7.1)
   rspec-rails
   rubocop (= 0.89.1)
   rubocop-ast (= 0.3.0)
