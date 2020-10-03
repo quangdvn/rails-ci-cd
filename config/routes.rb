@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   namespace :api do
     get "/", to: "welcome#index"
 
+    get "/hello", to: "welcome#hello"
+
     get "posts", to: "welcome#show"
 
     get "posts/:id", to: "welcome#detail"

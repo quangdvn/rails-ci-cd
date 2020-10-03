@@ -8,6 +8,10 @@ class Api::WelcomeController < ApiController
     render json: {success: true, posts: @post, message: "Here we go again"}
   end
 
+  def hello
+    render json: {success: true, message: "Homstay"}
+  end
+
   def detail
     @post = Post.find_by id: params[:id]
 
